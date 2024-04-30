@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BestDealProducts Inc.</string>
+    <string name="appliance">Appliances</string>
+    <string name="tv">Televisions</string>
+    <string name="computer">Computers</string>
+    <string name="furniture">Furniture</string>
+    <string name="auto">Auto Accessories</string>
+    <string name="checkout">Checkout</string>
+    <string name="next">Next</string>
+    <string name="appliance1">Stainless Steel Fridge \n Price: $2,209</string>
+    <string name="appliance2">Stainless Steel Stove \n Price: $895.00</string>
+    <string name="tv1">LG NanoCell 75" Smart TV \n Price: $1,299.99</string>
+    <string name="tv2">Sony 85" Smart Google TV \n Price: $1,999.99</string>
+    <string name="computer1">Apple MacBook Air 13.6 \n Price: $1,449.99</string>
+    <string name="computer2">Lenovo IdeaPad 3i 15.6 \n Price: $2,099.99</string>
+    <string name="couch">3 seater couch \n Price: $3,095.00</string>
+    <string name="table">Coffee table \n Price: $420.00</string>
+    <string name="mats">Car mats \n Price: $256.80</string>
+    <string name="covers">Car seat covers \n Price: $79.99</string>
+</resources>

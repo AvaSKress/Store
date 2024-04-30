@@ -1,0 +1,25 @@
+
+
+<!-- radio_button_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Replace with your actual image resource -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/fridge" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:text="RadioButton Text" /> <!-- Replace with your text -->
+
+</LinearLayout>

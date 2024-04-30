@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".CustomerInformation">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter your information"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/custName"
+        android:layout_width="337dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#4B65F6"
+        android:text="Complete"
+        android:textColor="#E6E6EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtExpDate"
+        app:layout_constraintVertical_bias="0.296"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/selectedProduct"
+        android:layout_width="333dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/paymentType"
+        android:layout_width="343dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="372dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="337dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Card number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentType" />
+
+    <TextView
+        android:id="@+id/lblExpDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="31dp"
+
+        android:text="Expiry date (MMYY)"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtExpDate"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:maxLength="4"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/lblExpDate"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber" />
+
+    <EditText
+        android:id="@+id/txtCvv"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lblCvv"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber" />
+
+    <TextView
+        android:id="@+id/lblCvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="CVV"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/txtExpDate"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber" />
+
+    <EditText
+        android:id="@+id/favColour"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Favourite Colour"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custName" />
+
+    <EditText
+        android:id="@+id/favNumber"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Favourite Number"
+        android:inputType="number"
+        android:maxLength="50"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favColour" />
+
+    <EditText
+        android:id="@+id/favSport"
+        android:layout_width="333dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Favorite Sport"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favNumber" />
+
+    <TextView
+        android:id="@+id/textErrors"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComplete"
+        app:layout_constraintVertical_bias="0.282" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
